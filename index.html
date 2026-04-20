@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTS Love Notebook | Cheat Sheet Anti-Ghosting 💖</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E11D48', /* Rose 600 - More intense for sales */
+                        secondary: '#FF1493', /* Deep Pink */
+                        tertiary: '#FF69B4', /* Hot Pink */
+                        bgsoft: '#FFF1F2', /* Rose 50 */
+                        dark: '#1F2937',
+                        light: '#4B5563',
+                        accent: '#FBBF24' /* Amber for CTA/Price */
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF1F2;
+            color: #1F2937;
+        }
+
+        /* Custom gradient text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #E11D48, #FF1493);
+        }
+
+        /* Glassmorphism for floating elements */
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* FAQ Accordion Transitions */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Animated Phone Mockup */
+        .phone-mockup {
+            box-shadow: 0 25px 50px -12px rgba(225, 29, 72, 0.25);
+            border: 8px solid #1F2937;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar/Sticky CTA (Appears on scroll down) -->
+    <div id="stickyCTA" class="fixed top-0 left-0 w-full z-50 glass translate-y-[-100%] transition-transform duration-300 shadow-sm py-3 px-6 flex justify-between items-center">
+        <div class="font-extrabold text-primary flex items-center gap-2">
+            <i data-lucide="heart" class="fill-primary w-5 h-5"></i> WTS
+        </div>
+        <a href="#pricing-section" class="bg-primary text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-secondary transition-colors shadow-lg">
+            Amankan Akses
+        </a>
+    </div>
+
+    <main class="max-w-4xl mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden">
+        
+        <!-- Section 1: The Hook & Agitation -->
+        <section class="px-6 pt-20 pb-16 relative">
+            <div class="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-bgsoft to-white z-0"></div>
+            
+            <div class="relative z-10 text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-black text-dark mb-6 leading-tight">
+                    Capek Tebak-Tebakan Kode Gebetan? Giliran Diajak Jalan Malah <span class="text-gradient">Awkward? 😩</span>
+                </h1>
+                <p class="text-light md:text-lg max-w-2xl mx-auto font-medium">
+                    Waktunya berhenti buang waktu dan tenaga buat PDKT yang ujung-ujungnya kena <strong>ghosting</strong>. Gimana kalau kamu punya <em>"Cheat Sheet"</em> rahasia yang bikin setiap fase pendekatanmu mulus, elegan, dan pastinya anti-garing?
+                </p>
+            </div>
+
+            <div class="relative z-10 max-w-2xl mx-auto bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-pink-100">
+                <p class="font-bold text-dark text-lg mb-6 text-center">Jujur, kamu pasti pernah (atau sering) ngalamin ini:</p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-bgsoft transition-colors">
+                        <span class="text-xl">🚩</span>
+                        <p class="text-dark">Kenalan di dating app, tapi chat mentok di <em>"Lagi ngapain?"</em> atau <em>"Udah makan belum?"</em></p>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-bgsoft transition-colors">
+                        <span class="text-xl">🚩</span>
+                        <p class="text-dark">Pas ketemu langsung, suasananya <strong>krik-krik</strong> karena kehabisan topik obrolan.</p>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-bgsoft transition-colors">
+                        <span class="text-xl">🚩</span>
+                        <p class="text-dark">Udah effort ngasih kado, eh ternyata dia lebih butuh quality time. <em>(Salah server!)</em></p>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-bgsoft transition-colors">
+                        <span class="text-xl">🚩</span>
+                        <p class="text-dark">Sering bingung milih tempat kencan selain nongkrong di cafe atau nonton bioskop.</p>
+                    </div>
+                    <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-bgsoft transition-colors">
+                        <span class="text-xl">🚩</span>
+                        <p class="text-dark"><em>Overthinking</em> berlebihan nungguin chat dibales sampai gak bisa tidur.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center bg-green-50 text-green-700 p-4 rounded-2xl border border-green-200">
+                    <p class="font-bold">Kalau iya, tenang... Kamu nggak sendirian, dan kamu cuma butuh strategi yang tepat!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Product Reveal -->
+        <section class="px-6 py-20 bg-dark text-white relative overflow-hidden">
+            <!-- Decorative blur -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary opacity-20 rounded-full blur-[100px]"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-12 max-w-3xl mx-auto">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-block bg-white/10 backdrop-blur px-4 py-1.5 rounded-full text-secondary font-bold text-sm tracking-widest mb-4 uppercase border border-secondary/30">
+                        Solusinya Ada Di Sini ✨
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6">Memperkenalkan:<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-white">WTS INTERACTIVE LOVE NOTEBOOK 💖</span></h2>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        Bukan e-book PDF membosankan, apalagi teori cinta abal-abal! Ini adalah <strong>Web-App Panduan Interaktif Premium</strong> berbasis sains dan psikologi asmara, khusus buat kamu yang pengen <em>level up game</em> PDKT-mu!
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        "Begitu kamu akses buku rahasia ini, kamu bakal dapetin tools yang bikin kamu seolah bisa ngebaca pikiran crush-mu."
+                    </p>
+                </div>
+
+                <!-- Abstract Phone Mockup visual -->
+                <div class="flex-1 w-full flex justify-center">
+                    <div class="phone-mockup w-64 h-[450px] bg-bgsoft rounded-[3rem] relative overflow-hidden flex flex-col items-center pt-8">
+                        <!-- Top Notch -->
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-dark rounded-b-2xl"></div>
+                        
+                        <div class="w-full px-6 text-center mt-6">
+                            <i data-lucide="heart" class="w-12 h-12 text-primary mx-auto mb-4 fill-primary animate-pulse"></i>
+                            <h3 class="text-dark font-black text-xl mb-2">Love Notebook</h3>
+                            <div class="space-y-3 mt-6">
+                                <div class="w-full h-10 bg-white rounded-xl shadow-sm"></div>
+                                <div class="w-full h-24 bg-white rounded-xl shadow-sm"></div>
+                                <div class="w-3/4 h-10 bg-gradient-to-r from-primary to-secondary rounded-full shadow-md mx-auto mt-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Feature Teaser -->
+        <section class="px-6 py-20 bg-white">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-dark mb-4">Apa Aja "Senjata Rahasia" di Dalamnya? 🤫</h2>
+                <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="group bg-bgsoft p-8 rounded-3xl hover:bg-primary transition-colors duration-300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="brain" class="text-primary w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark group-hover:text-white mb-3">The Personality & Love Language Decoder</h3>
+                    <p class="text-light group-hover:text-white/90 text-sm leading-relaxed">
+                        Cari tahu cara paling ampuh buat naklukin hatinya berdasarkan tipe psikologinya. Dia tipe yang suka dikasih hadiah, atau yang butuh didengerin? <em>Hack</em> hatinya lewat tes interaktif di dalam!
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group bg-bgsoft p-8 rounded-3xl hover:bg-primary transition-colors duration-300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="magnet" class="text-primary w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark group-hover:text-white mb-3">Attraction Psychology Vault</h3>
+                    <p class="text-light group-hover:text-white/90 text-sm leading-relaxed">
+                        Bongkar rahasia ilmiah kenapa seseorang bisa naksir kamu (bukan cuma soal fisik!). Dapatkan teknik <em>approach</em> yang berbeda drastis antara cowok dan cewek. Terapkan, dan lihat gimana gesturnya berubah saat di dekatmu!
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group bg-bgsoft p-8 rounded-3xl hover:bg-primary transition-colors duration-300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="dices" class="text-primary w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark group-hover:text-white mb-3">Date Idea Generator</h3>
+                    <p class="text-light group-hover:text-white/90 text-sm leading-relaxed">
+                        <em>Say goodbye</em> sama kencan yang ngebosenin! Tinggal klik generator ajaib kami, dan dapatkan ide nge-date <em>out-of-the-box</em> yang disesuaikan dengan budget dan vibe yang kamu mau.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group bg-bgsoft p-8 rounded-3xl hover:bg-primary transition-colors duration-300">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i data-lucide="gamepad-2" class="text-primary w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark group-hover:text-white mb-3">Ice-Breaker Mini Games</h3>
+                    <p class="text-light group-hover:text-white/90 text-sm leading-relaxed">
+                        Suasana mulai hening dan canggung? Buka gadget-mu, akses fitur ini, dan mainkan mini-games psikologis yang dirancang khusus buat mancing <em>Deep Talk</em> dan ketawa bareng. Dijamin obrolan ngalir deras!
+                    </p>
+                </div>
+
+                <!-- Feature 5 (Spans full width) -->
+                <div class="group bg-gradient-to-br from-pink-100 to-rose-100 p-8 rounded-3xl hover:from-primary hover:to-secondary transition-all duration-300 md:col-span-2 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 group-hover:scale-110 transition-transform">
+                        <i data-lucide="gauge" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark group-hover:text-white mb-2">Jealousy Meter & PDKT Tracker</h3>
+                        <p class="text-light group-hover:text-white/90 text-sm leading-relaxed">
+                            Fitur interaktif buat ngecek progres pendekatanmu (biar gak terkesan <em>love bombing</em>) dan slider khusus buat ngukur apakah cemburumu itu wajar atau udah masuk fase <em>red flag</em>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Social Proof -->
+        <section class="px-6 py-16 bg-gray-50 border-y border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-black text-center text-dark mb-10">Kata Mereka yang Udah Pakai "Cheat Sheet" Ini...</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <!-- Testi 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-dark italic mb-4 font-medium">"Suka sama fitur mini gamesnya, gw pake pas main sama doi, pertanyaan-pertanyaan deep talknya bagus banget, bikin topik jadi panjang"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">R</div>
+                        <div>
+                            <p class="font-bold text-sm text-dark">Raka, 24 Thn</p>
+                            <p class="text-xs text-light">Beta Tester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-dark italic mb-4 font-medium">"Sebagai cewe yang suka bingung sama isi otak cowo, tools ini ngebantu banget, seneng banget bisa jadi salah satu user pertama"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-pink-100 text-primary rounded-full flex items-center justify-center font-bold">D</div>
+                        <div>
+                            <p class="font-bold text-sm text-dark">Dinda, 22 Thn</p>
+                            <p class="text-xs text-light">Early Adopter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The Offer & Pricing -->
+        <section id="pricing-section" class="px-6 py-20 bg-bgsoft">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-black text-dark mb-6">Berapa Investasi Buat Kehidupan Asmara yang Lebih Baik? 💸</h2>
+                <p class="text-light md:text-lg mb-10 max-w-2xl mx-auto">
+                    Bayangkan, berapa banyak uang yang udah kamu habiskan buat nraktir gebetan, nonton, atau ngopi... tapi ujung-ujungnya gagal karena pendekatannya salah? Ratusan ribu? Jutaan?
+                </p>
+
+                <!-- Pricing Box -->
+                <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl border-4 border-primary relative transform transition-transform hover:-translate-y-2">
+                    <!-- Badge -->
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-primary text-white font-black px-6 py-2 rounded-full text-lg shadow-lg flex items-center gap-2">
+                        <i data-lucide="flame" class="w-5 h-5 fill-white"></i> PROMO TERBATAS!
+                    </div>
+
+                    <p class="text-dark font-bold text-xl mb-2 mt-4">Hanya dengan:</p>
+                    <div class="flex flex-col items-center justify-center gap-2 mb-8">
+                        <span class="text-2xl text-gray-400 line-through font-bold decoration-red-500 decoration-4">Rp 149.000</span>
+                        <span class="text-6xl md:text-7xl font-black text-primary">Rp 49.000</span>
+                    </div>
+                    
+                    <p class="text-dark font-medium text-lg mb-8 max-w-lg mx-auto">
+                        ...kamu udah bisa pegang kendali penuh atas kehidupan asmaramu <strong>selamanya!</strong>
+                    </p>
+
+                    <!-- NEW: V1.0 & Lifetime Update Benefit -->
+                    <div class="bg-blue-50 border border-blue-100 p-4 rounded-2xl mb-4 text-left">
+                        <p class="font-bold text-blue-700 flex items-center gap-2">
+                            <i data-lucide="refresh-cw" class="w-5 h-5"></i> Beli v1.0 Sekarang, Gratis Update Selamanya!
+                        </p>
+                        <p class="text-xs md:text-sm text-blue-600 mt-1">Ini adalah rilis perdana (versi 1.0). Kami akan terus menambah fitur, tes psikologi baru, dan <em>mini-games</em>. Amankan sekarang mumpung <strong>harga masih paling murah</strong>, dan nikmati semua <em>update</em> ke depannya secara GRATIS!</p>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-100 p-4 rounded-2xl mb-8 flex items-center justify-center gap-3">
+                        <i data-lucide="zap" class="text-yellow-500 w-8 h-8 fill-yellow-500 animate-pulse"></i>
+                        <div class="text-left">
+                            <p class="font-bold text-red-700">INSTANT ACCESS!</p>
+                            <p class="text-xs md:text-sm text-red-600">Checkout sekarang via sistem otomatis, link rahasia langsung masuk email/WA kamu detik ini juga. <strong>Gak pake nunggu!</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- BIG CTA BUTTON -->
+                    <a href="http://lynk.id/wanttosayang/vzd9m4v92ylj/checkout" target="_blank" class="block text-center w-full bg-gradient-to-r from-[#FF1493] to-[#E11D48] text-white font-black text-lg md:text-xl py-6 px-4 rounded-2xl shadow-[0_15px_35px_rgba(225,29,72,0.4)] hover:shadow-[0_20px_45px_rgba(225,29,72,0.6)] transform hover:scale-[1.02] transition-all duration-300 animate-pulse-fast">
+                        MAU! AKSES LOVE NOTEBOOK SEKARANG! 🚀
+                    </a>
+                    
+                    <p class="text-sm text-gray-400 mt-4 flex items-center justify-center gap-1">
+                        <i data-lucide="lock" class="w-4 h-4"></i> Pembayaran 100% Aman & Otomatis
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: FAQ -->
+        <section class="px-6 py-16 bg-white">
+            <h2 class="text-3xl font-black text-center text-dark mb-10">Yang Sering Ditanyain (FAQ) 🤔</h2>
+            
+            <div class="max-w-2xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-bold text-dark">Ini bentuknya buku fisik atau e-book?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-light bg-white rounded-b-2xl border-t border-gray-100 text-sm">
+                        <p><strong>Bukan keduanya!</strong> Ini adalah <em>interactive web-app</em> (aplikasi rahasia berbasis website) yang super ringan. Kamu tinggal buka link-nya di HP atau laptop, kapan pun kamu butuh "contekan" pas lagi sama gebetan!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-bold text-dark">Apakah aksesnya seumur hidup?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-light bg-white rounded-b-2xl border-t border-gray-100 text-sm">
+                        <p><strong>Betul banget!</strong> Sekali bayar, kamu dapet akses <em>lifetime</em> (seumur hidup). Karena ini masih peluncuran versi 1.0, ke depannya bakal ada banyak <em>update</em> fitur, materi, dan <em>games</em> baru. Kabar baiknya? Semua <em>update</em> itu <strong>GRATIS</strong> buat kamu yang udah beli sekarang saat harga masih promo!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-50 border border-gray-200 rounded-2xl cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="px-6 py-4 flex justify-between items-center">
+                        <h3 class="font-bold text-dark">Gimana cara pakenya pas lagi nge-date?</h3>
+                        <i data-lucide="chevron-down" class="faq-icon text-primary transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer px-6 text-light bg-white rounded-b-2xl border-t border-gray-100 text-sm">
+                        <p><strong>Gampang!</strong> Buka aja link-nya pas kalian lagi nongkrong, arahin ke fitur <em>Game Time</em> atau <em>Deep Talk</em>, dan ajak dia main bareng. Seru, elegan, dan gak keliatan kayak lagi modus!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA - Urgency -->
+        <section class="px-6 py-20 bg-dark text-white text-center relative">
+            <div class="max-w-3xl mx-auto relative z-10">
+                <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">
+                    Jangan Sampai Kesempatan Lewat Gitu Aja!
+                </h2>
+                <p class="text-gray-300 text-lg mb-10">
+                    Setiap hari yang kamu lewati tanpa strategi, adalah hari di mana gebetanmu mungkin lagi di-chat sama orang lain yang lebih jago PDKT-nya. 🫣 <br><br>
+                    <span class="font-bold text-yellow-400">Amankan "senjata"-mu sekarang sebelum harga promonya kembali normal!</span>
+                </p>
+
+                <a href="http://lynk.id/wanttosayang/vzd9m4v92ylj/checkout" target="_blank" class="inline-block bg-primary text-white font-black text-xl py-5 px-10 rounded-full shadow-[0_10px_25px_rgba(225,29,72,0.5)] hover:-translate-y-2 transition-transform duration-300">
+                    SAYA SIAP NAKLUKIN HATINYA! ❤️‍🔥
+                </a>
+            </div>
+        </section>
+
+        <footer class="bg-gray-900 text-gray-500 py-6 text-center text-sm">
+            <p>&copy; 2024 WTS Love Notebook. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // FAQ Toggle Logic
+        function toggleFaq(element) {
+            // Close other open FAQs
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(item => {
+                if(item !== element && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                }
+            });
+            // Toggle current FAQ
+            element.classList.toggle('active');
+        }
+
+        // Sticky CTA Header Logic
+        const stickyCTA = document.getElementById('stickyCTA');
+        const pricingSection = document.getElementById('pricing-section');
+        
+        window.addEventListener('scroll', () => {
+            // Show sticky header after scrolling down 400px, but hide when reaching the pricing section
+            const pricingTop = pricingSection.getBoundingClientRect().top;
+            
+            if (window.scrollY > 400 && pricingTop > window.innerHeight) {
+                stickyCTA.classList.remove('translate-y-[-100%]');
+            } else {
+                stickyCTA.classList.add('translate-y-[-100%]');
+            }
+        });
+    </script>
+</body>
+</html>
