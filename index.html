@@ -1,5 +1,5 @@
 <!-- Google Fonts & Dependencies untuk Scalev -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -143,19 +143,38 @@
                     </p>
                 </div>
 
-                <!-- Abstract Phone Mockup visual -->
+                <!-- Abstract Phone Mockup visual / UI HP Interaktif -->
                 <div class="flex-1 w-full flex justify-center">
-                    <div class="phone-mockup w-64 h-[450px] bg-bgsoft rounded-[3rem] relative overflow-hidden flex flex-col items-center pt-8">
+                    <div class="phone-mockup w-[280px] h-[540px] bg-[#FDFCF8] rounded-[2.5rem] relative overflow-hidden flex flex-col items-center">
                         <!-- Top Notch -->
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-dark rounded-b-2xl"></div>
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-dark rounded-b-2xl z-30"></div>
                         
-                        <div class="w-full px-6 text-center mt-6">
-                            <i data-lucide="heart" class="w-12 h-12 text-primary mx-auto mb-4 fill-primary animate-pulse"></i>
-                            <h3 class="text-dark font-black text-xl mb-2">Love Notebook</h3>
-                            <div class="space-y-3 mt-6">
-                                <div class="w-full h-10 bg-white rounded-xl shadow-sm"></div>
-                                <div class="w-full h-24 bg-white rounded-xl shadow-sm"></div>
-                                <div class="w-3/4 h-10 bg-gradient-to-r from-primary to-secondary rounded-full shadow-md mx-auto mt-6"></div>
+                        <!-- Inner App UI matching Uploaded Image exactly -->
+                        <div class="relative w-full h-full flex flex-col items-center justify-center px-6 pt-10 pb-8 z-10 overflow-hidden">
+                            <!-- Decorative Icons (Soft Pink like original image) -->
+                            <i data-lucide="wand-2" class="absolute -top-2 -left-6 w-32 h-32 text-[#FBE3E8] opacity-80 transform -rotate-12 -z-10" stroke-width="1.5" fill="currentColor"></i>
+                            <i data-lucide="flame" class="absolute -bottom-4 -right-8 w-36 h-36 text-[#FBE3E8] opacity-80 -z-10" stroke-width="1.5" fill="currentColor"></i>
+
+                            <!-- Top Kicker -->
+                            <div class="text-[0.65rem] font-bold text-[#CE4B5D] tracking-[0.15em] uppercase mb-6 text-center z-20">
+                                WTS Love Notebook
+                            </div>
+
+                            <!-- Headlines with Playfair Display -->
+                            <div class="w-full flex flex-col items-center z-20">
+                                <h3 class="font-['Playfair_Display'] text-[2.6rem] font-bold text-[#0F172A] leading-[1.05] tracking-tight text-center">Your Love</h3>
+                                <h3 class="font-['Playfair_Display'] text-[2.6rem] font-bold text-[#0F172A] leading-[1.05] tracking-tight text-center">Story</h3>
+                                <h3 class="font-['Playfair_Display'] text-[2.7rem] font-bold italic text-[#781B32] leading-[1.05] tracking-tight text-center mt-1 mb-8">Starts Here!</h3>
+                            </div>
+                            
+                            <!-- Body Text -->
+                            <p class="text-[0.8rem] text-[#475569] mb-8 font-medium leading-[1.6] text-center px-1 z-20">
+                                Siap bikin momen PDKT jadi seru? Panduan psikologis ini bakal bantu kamu mulai perjalanan cinta yang smooth, tanpa pressure!
+                            </p>
+
+                            <!-- Button -->
+                            <div class="bg-[#781B32] text-white text-[0.85rem] font-medium py-3.5 px-6 rounded-full flex items-center justify-center gap-2 shadow-lg shadow-[#781B32]/20 w-auto hover:bg-[#5E1426] transition-colors cursor-pointer relative z-20">
+                                Mulai Perjalananmu <i data-lucide="arrow-down" class="w-[18px] h-[18px]"></i>
                             </div>
                         </div>
                     </div>
@@ -392,20 +411,28 @@
 </main>
 
 <script>
-    // Initialize Icons
-        lucide.createIcons();
-
-        // FAQ Toggle Logic
-        function toggleFaq(element) {
-            // Close other open FAQs
-            const allItems = document.querySelectorAll('.faq-item');
-            allItems.forEach(item => {
-                if(item !== element && item.classList.contains('active')) {
-                    item.classList.remove('active');
-                }
-            });
-            // Toggle current FAQ
-            element.classList.toggle('active');
+    // Initialize Icons safely for Scalev
+    function renderIcons() {
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
         }
+    }
+    renderIcons();
+    // Fallback in case Scalev loads scripts asynchronously
+    setTimeout(renderIcons, 500);
+    setTimeout(renderIcons, 1500);
+
+    // FAQ Toggle Logic
+    function toggleFaq(element) {
+        // Close other open FAQs
+        const allItems = document.querySelectorAll('.faq-item');
+        allItems.forEach(item => {
+            if(item !== element && item.classList.contains('active')) {
+                item.classList.remove('active');
+            }
+        });
+        // Toggle current FAQ
+        element.classList.toggle('active');
+    }
 </script>
 </div>
